@@ -1,0 +1,98 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: Verdana;
+}
+
+header{
+	color: white;
+	background-color: #2f7aa8;
+	text-align: center;
+	font-size: 25px;
+	padding: 2.5%;
+}
+
+.kontener{
+	display: flex;
+}
+
+nav{
+	background-color: #90abd4;
+	flex: 1;
+}
+ul{
+	list-style-type: none;
+	padding: 3%;
+}
+li{
+	padding: 5px 20px 5px 20px;
+}
+.najedz:hover{
+	color: white;
+	background-color: #2f7aa8;
+}
+#menu{
+	font-weight: bold;
+	font-size: 18px;
+}
+
+
+section{
+	background-color: #E2ECFF;
+	flex: 3;
+	padding: 0% 2.5% 2.5%;
+}
+.news{
+	background-color: #2f7aa8;
+	color: white;
+	border: gray solid 1px;
+	border-radius: 5px 5px 0px 0px;
+	font-weight: bold;
+	font-size: 21px;
+	padding: 1%;
+	margin-top: 2.5%;
+	width: fit-content;
+}
+.autor{
+	display: flex;
+	justify-content: space-between;
+}
+.pogrubienie{
+	font-weight: bold;
+}
+article{
+	border: gray solid 1px;
+}
+article p{
+	padding: 1.5% 1.5% 2%;
+}
+#czytaj{
+	border: solid gray 1px;
+	color: white;
+	background-color: #2f7aa8;
+	font-weight: bold;
+	text-align: center;
+	padding: 1% 2% 1%;
+	margin-bottom: 2%;
+}
+#czytaj:hover{
+	color: #2f7aa8;
+	background-color: white;
+}
+#przycisk{
+	display: flex;
+	justify-content: center;
+}
+
+footer{
+	color: white;
+	background-color: #2f7aa8;
+	text-align: right;
+	padding: 1.5% 5% 1.5% 0%;
+}
+
+@media (max-width: 600px) {
+	.kontener{
+		flex-direction: column;
+	}
+}
