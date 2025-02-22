@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    
+</head>
+<body>
+    <!-- ___ZADANIE 1___ -->
+    <p>Wylosuj liczbę z zakresu od 1 do 10</p>
+    <form>
+        <input type="text" id="losowa" name="losowa">
+        <button type="button" onclick="losowanie()">Sprawdż</button>
+    </form>
+    
+
+    <!-- ___ZADANIE 2___ -->
+    <br><br>
+    <form>
+        <label>1st Number:</label>
+        <input type="number" id="number1"><br>
+        <label>2nd Number:</label>
+        <input type="number" id="number2"><br>
+        <button type="button" onclick="multiply()">Multiply</button>
+        <button type="button" onclick="divide()">Divide</button> <br>
+    </form>
+    <p>The result is:</p>
+    <p id="wynik">-</p>
+
+
+    <!-- ___ZADANIE 3___ -->
+    <br><br>
+    <p>Podaj temperaturę w stopniach Celsiusza lub Fahrenheita</p>
+    <form>
+        <label>Celsius: </label>
+        <input type="number" id="C">
+        <button type="button" onclick="celFah()">Konwertuj</button><br>
+        <label>Fahrenheit</label>
+        <input type="number" id="F">
+        <button type="button" onclick="fahCel()">Konwertuj</button>
+    </form>
+    <p id="temp">-</p>
+    
+
+    <!-- ___ZADANIE 4___ -->
+    <br><br>
+    <p>Obliczanie a do potęgi n</p>
+    <form>
+        <label>a:</label>
+        <input type="number" id="a"><br>
+        <label>n:</label>
+        <input type="number" id="n"><br>
+        <button type="button" onclick="potega()">Oblicz a<sup>n</sup> </button>
+    </form>
+    <p id="potegaWynik">Wynik: -</p>
+
+
+    <!-- ___ZADANIE 5___ -->
+    <br>
+    <p>Obliczanie n!</p>
+    <form>
+        <label>n: </label>
+        <input type="number" id="nSilnia"><br>
+        <button type="button" onclick="silnia()">Oblicz n!</button>
+    </form>
+    <p id="silniaWynik">Wynik: -</p>
+
+
+    <!-- ___ZADANIE 6___ -->
+    <br>
+    <p>Sortowanie tablicy</p>
+    <p>tab = [3, 8, 7, 6, 5, -4, -3, 2, 1]</p>
+    <button type="button" onclick="sortuj()">Sortuj</button>
+    <p id="tablicaPo">-</p>
+
+
+
+
+
+    <!-- ___plik .js___ -->
+    <script src="script.js"></script>
+</body>
+</html>
