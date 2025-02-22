@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab_6</title>
+    <style>
+        nav button{
+            height:50px;
+            width: 50px;
+            color: black;
+        }
+        #p_1{
+           background-color: lightcoral;
+        }
+        #p_2{
+           background-color: lightyellow;
+        }
+        #p_3{
+           background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <!--Zad 1-->
+    <!--zmiana rozmiaru, koloru i rodzaju czcionki po naciśnięciu przycisku-->
+    <p id="zad1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, 
+        temporibus commodi. Voluptas placeat rerum nobis accusantium 
+        fugit vero impedit in eveniet quae consectetur, nisi perspiciatis aperiam a 
+        vel molestias veritatis.
+    </p>
+    <button type="button" onclick="zmien_p()">Zmień wygląd</button>
+    
+    <!--Zad 2-->
+    <!--zmiana adresu źródłowego obrazu-->
+    <br><br>
+    <img id="obr" src="obraz1.jpeg" alt="obraz1" height="300">
+    <form>
+        <input type="text" id="adres">
+        <label>adres żródłowy obrazu do zmiany (np. obraz2.jpg)</label>
+        <br>
+        <button type="button" onclick="zmien_obraz()">Zmień obraz</button>
+    </form>
+
+    <!--Zad 3-->
+    <!--dodawanie elementu li (w nim a) do listy, usuwanie li po tekście który zawiera-->
+    <br><br>
+    <ul id="lista">
+        <li id="1">link</li>
+        <li id="2">tekst</li>
+        <li id="3">adres</li>
+    </ul>
+    <form>
+        <input type="text" id="adres_a">
+        <label>adres (np. https://pcz.pl )</label><br>
+        <input type="text" id="tekst_a">
+        <label>tekst</label><br>
+        <button type="button" onclick="lista()">Dodaj odnośnik</button>
+        <br><br>
+        <input type="text" id="z_inputa">
+        <button type="button" onclick="usun()">Usun element</button>
+        <label>przykład usuwania (numeracja od 0)</label>
+    </form>
+    
+    
+
+    <!--Zad 4-->
+    <!--po najechaniu kursorem na div zamiast tekstu pojawia się aktualna data-->
+    <!--po kliknięciu diva data zostaje skopiowana do znacznika p-->
+    <!--po opuszczeniu diva pojawia się pierwotny tekst-->
+    <br><br>
+    <div id="tekst" onmouseover="wyswietl_date(this)" onmouseout="powrot(this)" onclick="kopiuj(this)"
+    style="background-color:pink; height: 50px;">
+        dowolny tekst
+    </div>
+
+    <p id="kopia" style="background-color:lightblue; height: 50px;">tekst</p>
+    <br><br>    
+
+    <!--Zad 5-->
+    <!--przykład menu nawigacyjnego-->
+    <br><br>
+    <nav>
+        <button type="button" id="p_1" onmouseover="p1(this)" onmouseout="p1_o(this)" onclick="p1_c(this)">1: pcz</button>
+        <button type="button" id="p_2" onmouseover="p2(this)" onmouseout="p2_o(this)" onclick="p2_c(this)">2: wiisi</button>
+        <button type="button" id="p_3" onmouseover="p3(this)" onmouseout="p3_o(this)" onclick="p3_c(this)">3: wim</button>
+
+    </nav>
+
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
