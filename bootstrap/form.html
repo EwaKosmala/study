@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+    <div class="container-fluid text-bg-primary h1 text-center p-3 m-0">
+        Podstrona - form
+    </div>
+
+    <div class="container-fluid bg-primary bg-opacity-50">
+        <div class="container py-5 col-8" >
+            <form>
+                <div class="form-group mb-2">
+                    <label for="tekst">Pole tekstowe</label>
+                    <input type="text" class="form-control" id="tekst">
+                </div>
+
+                <div class="form-check-group mb-2">
+                    <input type="checkbox" class="form-check-input" id="checkbox1">
+                    <label class="form-check-label" for="checkbox1">opcja 1</label>
+
+                    <input type="checkbox" class="form-check-input" id="checkbox2">
+                    <label class="form-check-label" for="checkbox2">opcja 2</label>
+
+                    <input type="checkbox" class="form-check-input" id="checkbox3">
+                    <label class="form-check-label" for="checkbox3">opcja 3</label>
+
+                    <input type="checkbox" class="form-check-input" id="checkbox4">
+                    <label class="form-check-label" for="checkbox4">opcja 4</label>
+                </div>
+
+                <!--w radio musi być takie samo name!!!!-->
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" name="opcja_radio" id="radio1">
+                    <label class="form-check-label" for="radio1">radio 1</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" name="opcja_radio" id="radio2">
+                    <label class="form-check-label" for="radio2">radio 2</label>
+                </div>
+
+                <div class="form-group mt-2">
+                    <label for="textarea1">textarea</label>
+                    <textarea class="form-control" id="textarea1" rows="3"></textarea>
+                </div>
+
+                <div class="form-group mt-2">
+                    <label for="pole_select">Dropdown</label>
+                    <select class="form-control" id="pole_select">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                </div>
+
+                <div class="form-group mt-2 mb-2">
+                    <label for="file1">Pole do wyboru pliku</label>
+                    <input type="file" class="form-control-file" id="file1">
+                </div>
+
+                <button type="submit" class="btn btn-primary">
+                    Zatwierdź
+                </button>
+
+            </form>
+        
+
+            <!--okno modalne-->
+            <button type="submit" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#przykladModal" >
+                Zatwierdź 2
+            </button>
+            
+            <div class="modal fade" id="przykladModal" tabindex="-1" aria-labelledby="przykladModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="przykladModalLabel">Pytanie</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Czy na pewno zatwierdzasz dane w formularzu?</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zamknij</button>
+                            <button type="button" class="btn btn-primary">Zatwierdź</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+</body>
+</html>
